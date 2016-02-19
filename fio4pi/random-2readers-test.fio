@@ -1,0 +1,10 @@
+[random-read-1]
+rw=randread
+size=128m
+directory=/tmp/fio-testing/data
+
+[random-read-2]
+rw=randread
+size=128m
+directory=/tmp/fio-testing/data
+

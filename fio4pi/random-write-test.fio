@@ -1,0 +1,6 @@
+; random write of 1024MB of data
+
+[random-write]
+rw=randwrite
+size=1024m
+directory=/tmp/fio-testing/data

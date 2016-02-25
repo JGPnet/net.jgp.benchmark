@@ -1,0 +1,21 @@
+; 4 writers
+
+[random-write-1]
+rw=randwrite
+size=1024m
+directory=/tmp/fio-testing/data
+
+[random-write-2]
+rw=randwrite
+size=1024m
+directory=/tmp/fio-testing/data
+
+[random-write-3]
+rw=randwrite
+size=1024m
+directory=/tmp/fio-testing/data
+
+[random-write-4]
+rw=randwrite
+size=1024m
+directory=/tmp/fio-testing/data

@@ -1,3 +1,5 @@
+; 6 readers
+
 [random-read-1]
 rw=randread
 size=128m

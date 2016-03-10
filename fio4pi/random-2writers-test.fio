@@ -1,3 +1,5 @@
+; 2 writers
+
 [random-write-1]
 rw=randwrite
 size=1024m

@@ -10,7 +10,7 @@ rm results/cpu-$platform-$version.log 2 > /dev/null
 ./sensetemp.sh > results/cputemp-$platform-$version.log &
 
 # Loop
-for thread in 1 2 3 4 5 6 8 16 32 64
+for thread in 1 2 3 4 5 6 7 8 16 32 64
 do 
   echo "--------------------------------------------------------------------------------"
   echo Running $thread thread\(s\)...
@@ -20,7 +20,7 @@ do
     echo `date +%s`";--------------------------------------------------------------------------------" >> results/cputemp-$platform-$version.log
     echo `date +%s`";$thread-$rec" >> results/cputemp-$platform-$version.log
     sync
-    sysbench --test=cpu --cpu-max-prime=200 --num-threads=$thread run > results/cpu-$platform-$version-$thread-$rec.log
+    sysbench --test=cpu --cpu-max-prime=20000 --num-threads=$thread run > results/cpu-$platform-$version-$thread-$rec.log
     cat results/cpu-$platform-$version-$thread-$rec.log
     echo "--------------------------------------------------------------------------------" >> results/cpu-$platform-$version.log
     cat results/cpu-$platform-$version-$thread-$rec.log >> results/cpu-$platform-$version.log

@@ -17,7 +17,8 @@ do
     echo "Test #$rec (threads: $each)"
     sysbench --test=cpu --cpu-max-prime=200 --num-threads=$thread run > results/cpu-$platform-$version-$thread-$rec.log
     cat results/cpu-$platform-$version-$thread-$rec.log
-    cat results/cpu-$platform-$version-$thread-$rec.log > results/cpu-$platform-$version.log
+    echo "--------------------------------------------------------------------------------" >> results/cpu-$platform-$version.log
+    cat results/cpu-$platform-$version-$thread-$rec.log >> results/cpu-$platform-$version.log
     rm results/cpu-$platform-$version-$thread-$rec.log
     sleep 20s
   done

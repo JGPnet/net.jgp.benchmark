@@ -5,7 +5,7 @@ version=`uname -r`
 echo "Platform ...... " $platform
 echo "OS Version .... " $version
 
-rm results/cpu-$platform-$version.log 2 > /dev/null
+rm results/cpu-$platform-$version.log 2>/dev/null
 
 ./sensetemp.sh > results/cputemp-$platform-$version.log &
 

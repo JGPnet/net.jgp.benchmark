@@ -1,7 +1,7 @@
 #!/bin/bash
 
-$platform = `cat /proc/cmdline | awk -v RS=" " -F= '/boardrev/ { print $2 }'`
-$version = `uname -r`
+platform = `cat /proc/cmdline | awk -v RS=" " -F= '/boardrev/ { print $2 }'`
+version = `uname -r`
 echo "Platform ...... " $platform
 echo "OS Version .... " $version
 

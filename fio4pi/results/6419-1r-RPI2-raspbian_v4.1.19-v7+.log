@@ -1,0 +1,30 @@
+random-read: (g=0): rw=randread, bs=4K-4K/4K-4K/4K-4K, ioengine=sync, iodepth=1
+fio-2.6
+Starting 1 process
+random-read: Laying out IO file(s) (1 file(s) / 128MB)
+
+random-read: (groupid=0, jobs=1): err= 0: pid=959: Mon Mar 21 11:53:07 2016
+  read : io=131072KB, bw=8011.3KB/s, iops=2002, runt= 16361msec
+    clat (usec): min=456, max=2318, avg=478.61, stdev=50.68
+     lat (usec): min=457, max=2319, avg=480.23, stdev=50.70
+    clat percentiles (usec):
+     |  1.00th=[  462],  5.00th=[  462], 10.00th=[  466], 20.00th=[  466],
+     | 30.00th=[  466], 40.00th=[  470], 50.00th=[  478], 60.00th=[  478],
+     | 70.00th=[  482], 80.00th=[  482], 90.00th=[  490], 95.00th=[  498],
+     | 99.00th=[  540], 99.50th=[  564], 99.90th=[ 1512], 99.95th=[ 1816],
+     | 99.99th=[ 2288]
+    bw (KB  /s): min= 7896, max= 8064, per=100.00%, avg=8016.75, stdev=36.26
+    lat (usec) : 500=95.79%, 750=3.96%, 1000=0.04%
+    lat (msec) : 2=0.18%, 4=0.02%
+  cpu          : usr=3.12%, sys=10.51%, ctx=64060, majf=0, minf=18
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=32768/w=0/d=0, short=r=0/w=0/d=0, drop=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: io=131072KB, aggrb=8011KB/s, minb=8011KB/s, maxb=8011KB/s, mint=16361msec, maxt=16361msec
+
+Disk stats (read/write):
+  mmcblk0: ios=32593/0, merge=0/0, ticks=13550/0, in_queue=13440, util=82.22%

@@ -12,6 +12,9 @@ then
   echo "Must provide platform id (rpi2, rpi3)"
   exit 1
 fi
+
+mkdir -p /tmp/fio-testing/data 2>/dev/null
+
 echo "------------------------------------------------------------------------------------------"
 echo "1 reader..."
 /usr/local/bin/fio random-1reader-test.fio > results/$1-1r-$2-raspbian_v`uname -r`.log

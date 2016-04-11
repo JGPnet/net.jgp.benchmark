@@ -1,0 +1,11 @@
+random-read-1: (g=0): rw=randread, bs=4K-4K/4K-4K/4K-4K, ioengine=sync, iodepth=1
+random-read-2: (g=0): rw=randread, bs=4K-4K/4K-4K/4K-4K, ioengine=sync, iodepth=1
+fio-2.6
+Starting 2 processes
+random-read-1: Laying out IO file(s) (1 file(s) / 128MB)
+
+fio: terminating on signal 2
+random-read-2: Laying out IO file(s) (1 file(s) / 128MB)
+
+
+Run status group 0 (all jobs):

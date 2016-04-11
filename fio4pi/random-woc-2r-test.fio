@@ -1,0 +1,10 @@
+;2 readers
+
+[random-read-1]
+rw=randread
+directory=/tmp/fio-testing/data
+
+[random-read-2]
+rw=randread
+directory=/tmp/fio-testing/data
+
